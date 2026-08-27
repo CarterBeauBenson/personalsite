@@ -1,0 +1,169 @@
+.site-header {
+  position: fixed;
+  z-index: 100;
+  inset: 0 0 auto;
+
+  height: var(--header-height);
+
+  background: rgba(7, 16, 24, 0.9);
+  border-bottom: 1px solid transparent;
+
+  backdrop-filter: blur(16px);
+
+  transition:
+    background 220ms ease,
+    border-color 220ms ease;
+}
+
+.site-header.scrolled {
+  background: rgba(7, 16, 24, 0.97);
+  border-bottom-color: var(--line);
+}
+
+.nav-shell {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 36px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2px;
+
+  min-width: 0;
+}
+
+.brand-name {
+  color: var(--text);
+
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.brand-role {
+  color: var(--muted-2);
+
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+.site-nav > a {
+  position: relative;
+
+  color: #c7d0d4;
+
+  font-size: 0.82rem;
+  font-weight: 560;
+
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.site-nav > a:not(.nav-cv)::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 100%;
+  bottom: -7px;
+
+  height: 1px;
+
+  background: var(--accent);
+
+  transition: right 180ms ease;
+}
+
+.site-nav > a:not(.nav-cv):hover,
+.site-nav > a:not(.nav-cv):focus-visible {
+  color: var(--text);
+}
+
+.site-nav > a:not(.nav-cv):hover::after,
+.site-nav > a:not(.nav-cv):focus-visible::after {
+  right: 0;
+}
+
+.nav-cv {
+  min-height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0 16px;
+
+  border: 1px solid var(--accent);
+
+  color: var(--accent) !important;
+
+  font-weight: 700 !important;
+}
+
+.nav-cv:hover,
+.nav-cv:focus-visible {
+  background: var(--accent);
+  color: var(--bg-deep) !important;
+}
+
+.nav-toggle {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+
+  width: 24px;
+  height: 1px;
+
+  margin: 6px auto;
+
+  background: var(--text);
+
+  transition:
+    transform 220ms ease,
+    opacity 220ms ease;
+}
+
+body.menu-open .nav-toggle span:first-child {
+  transform: translateY(3.5px) rotate(45deg);
+}
+
+body.menu-open .nav-toggle span:last-child {
+  transform: translateY(-3.5px) rotate(-45deg);
+}
