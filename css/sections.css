@@ -365,6 +365,17 @@ a.project:hover .project-arrow {
 
 /* ABOUT */
 
+.about-section {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(209, 169, 76, 0.035),
+      transparent 42%
+    );
+
+  border-bottom: 1px solid var(--line);
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;

@@ -2,7 +2,7 @@
 
 Personal website for Carter-Beau Benson.
 
-The site is intentionally built as a simple static website so it can be hosted directly with GitHub Pages without a framework, package manager, or build process.
+The site is intentionally built as a simple static website so it can be hosted directly with GitHub Pages without a framework, package manager, or build process. The full homepage is present in `index.html` so visitors and search engines receive the complete content immediately.
 
 ## Site Structure
 

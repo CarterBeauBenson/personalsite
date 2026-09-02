@@ -1,5 +1,5 @@
 .hero {
-  min-height: 100svh;
+  min-height: min(900px, 92svh);
 
   display: flex;
   flex-direction: column;

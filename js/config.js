@@ -1,6 +1,6 @@
 window.SITE_CONFIG = {
   cubrcEmail: "carter-beau.benson@cubrc.org",
-  personalEmail: "carterbeaupbenson@gmail.org",
+  personalEmail: "carterbeaupbenson@gmail.com",
   cubrcWebsite: "https://www.cubrc.org/",
   cubrcContact: "https://www.cubrc.org/contact/",
 

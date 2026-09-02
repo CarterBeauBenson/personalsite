@@ -1,30 +1,3 @@
-async function loadSections() {
-  const includeTargets = document.querySelectorAll("[data-include]");
-
-  for (const target of includeTargets) {
-    const file = target.getAttribute("data-include");
-
-    try {
-      const response = await fetch(file);
-
-      if (!response.ok) {
-        throw new Error(`Could not load ${file}`);
-      }
-
-      target.outerHTML = await response.text();
-    } catch (error) {
-      console.error(error);
-
-      target.innerHTML = `
-        <p class="load-error">
-          Could not load ${file}.
-        </p>
-      `;
-    }
-  }
-}
-
-
 function applySiteConfig() {
   const config = window.SITE_CONFIG;
 
@@ -169,9 +142,7 @@ function setupRevealAnimations() {
 }
 
 
-async function initializeSite() {
-  await loadSections();
-
+function initializeSite() {
   applySiteConfig();
   setCopyrightYear();
   setupMobileNavigation();
