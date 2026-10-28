@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Ontology graph arranged as a sports diamond</title>
+  <circle cx="32" cy="32" r="30" fill="#071018" stroke="#263846" stroke-width="2"/>
+  <path d="M32 8 56 32 32 56 8 32Z" fill="none" stroke="#d1a94c" stroke-width="3" stroke-linejoin="round"/>
+  <g stroke="#d1a94c" stroke-width="2" stroke-linecap="round">
+    <path d="M32 32 32 8M32 32 56 32M32 32 32 56M32 32 8 32"/>
+  </g>
+  <g fill="#d1a94c" stroke="#f5ead2" stroke-width="1.5">
+    <circle cx="32" cy="8" r="4"/>
+    <circle cx="56" cy="32" r="4"/>
+    <circle cx="32" cy="56" r="4"/>
+    <circle cx="8" cy="32" r="4"/>
+  </g>
+  <circle cx="32" cy="32" r="8" fill="#f5ead2" stroke="#d1a94c" stroke-width="2"/>
+  <g fill="none" stroke="#071018" stroke-width="1.7" stroke-linecap="round">
+    <path d="M27 26c3 3 3 9 0 12"/>
+    <path d="M37 26c-3 3-3 9 0 12"/>
+  </g>
+</svg>
