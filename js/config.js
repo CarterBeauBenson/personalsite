@@ -8,5 +8,5 @@ window.SITE_CONFIG = {
   github: "https://github.com/CarterBeauBenson",
   orcid: "https://orcid.org/0009-0006-5880-7503",
 
-  cv: "https://docs.google.com/document/d/1X_VrNDzL80FZKxXGZalo3_uQ3tW8MlR7/edit?usp=sharing&ouid=105331749056526811317&rtpof=true&sd=true"
+  cv: "assets/carter-beau-benson-cv.pdf"
 };

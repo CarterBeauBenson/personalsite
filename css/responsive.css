@@ -228,6 +228,16 @@
     gap: 18px;
   }
 
+  .about-intro {
+    grid-template-columns: 88px 1fr;
+    gap: 22px;
+  }
+
+  .about-headshot {
+    width: 88px;
+    height: 88px;
+  }
+
   .focus-grid {
     grid-template-columns: 1fr;
   }
@@ -339,6 +349,10 @@
 
   .hero-visual {
     min-height: 310px;
+  }
+
+  .about-intro {
+    grid-template-columns: 1fr;
   }
 
   .map-label {
