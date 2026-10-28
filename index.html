@@ -28,40 +28,79 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://carterbeaubenson.github.io/personalsite/#person",
-    "name": "Carter-Beau Benson",
-    "givenName": "Carter-Beau",
-    "familyName": "Benson",
-    "honorificSuffix": "PhD",
-    "url": "https://carterbeaubenson.github.io/personalsite/",
-    "jobTitle": ["Project Manager", "Ontologist"],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "CUBRC",
-      "url": "https://www.cubrc.org/"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "University at Buffalo"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Buffalo",
-      "addressRegion": "NY",
-      "addressCountry": "US"
-    },
-    "knowsAbout": [
-      "Applied ontology",
-      "Knowledge representation",
-      "Knowledge graphs",
-      "Semantic interoperability",
-      "Ontology-supported artificial intelligence"
-    ],
-    "sameAs": [
-      "https://www.linkedin.com/in/carterbeaubenson",
-      "https://github.com/CarterBeauBenson",
-      "https://orcid.org/0009-0006-5880-7503"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://carterbeaubenson.github.io/personalsite/#website",
+        "url": "https://carterbeaubenson.github.io/personalsite/",
+        "name": "Carter-Beau Benson",
+        "publisher": { "@id": "https://carterbeaubenson.github.io/personalsite/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://carterbeaubenson.github.io/personalsite/#profile",
+        "url": "https://carterbeaubenson.github.io/personalsite/",
+        "name": "Carter-Beau Benson, PhD — Ontologist and Project Manager",
+        "dateModified": "2026-10-28",
+        "mainEntity": { "@id": "https://carterbeaubenson.github.io/personalsite/#person" },
+        "isPartOf": { "@id": "https://carterbeaubenson.github.io/personalsite/#website" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://carterbeaubenson.github.io/personalsite/#person",
+        "name": "Carter-Beau Benson",
+        "givenName": "Carter-Beau",
+        "familyName": "Benson",
+        "honorificSuffix": "PhD",
+        "url": "https://carterbeaubenson.github.io/personalsite/",
+        "description": "Ontologist and project manager specializing in applied ontology, knowledge representation, semantic interoperability, knowledge graphs, and ontology-supported AI.",
+        "jobTitle": ["Project Manager", "Ontologist"],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "CUBRC",
+          "url": "https://www.cubrc.org/"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University at Buffalo"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Buffalo",
+          "addressRegion": "NY",
+          "addressCountry": "US"
+        },
+        "knowsAbout": [
+          "Applied ontology",
+          "Knowledge representation",
+          "Knowledge graphs",
+          "Semantic interoperability",
+          "Ontology-supported artificial intelligence"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/carterbeaubenson",
+          "https://github.com/CarterBeauBenson",
+          "https://orcid.org/0009-0006-5880-7503",
+          "https://www.researchgate.net/profile/Carter-Beau-Benson"
+        ],
+        "subjectOf": [
+          {
+            "@type": "CreativeWork",
+            "name": "Netting Expectations: The Football Ontology",
+            "url": "https://philpapers.org/rec/BENNET"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "name": "A fourfold pathogen reference ontology suite",
+            "url": "https://doi.org/10.1186/s13326-025-00333-6"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "name": "My Ontologist: Evaluating BFO-Based AI for Definition Support",
+            "url": "https://arxiv.org/abs/2407.17657"
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -171,6 +210,29 @@
             <a class="text-link" href="https://orcid.org/0009-0006-5880-7503" data-config-href="orcid" target="_blank" rel="me noopener">ORCID <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="https://docs.google.com/document/d/1X_VrNDzL80FZKxXGZalo3_uQ3tW8MlR7/edit?usp=sharing&amp;ouid=105331749056526811317&amp;rtpof=true&amp;sd=true" data-config-href="cv" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a>
           </div>
+
+          <div class="focus-grid" aria-label="Current areas of focus">
+            <div class="focus-item">
+              <span>01</span>
+              <h3>Applied ontology</h3>
+              <p>Turning domain expertise into explicit, reusable semantic models.</p>
+            </div>
+            <div class="focus-item">
+              <span>02</span>
+              <h3>Knowledge graphs</h3>
+              <p>Connecting data, evidence, and context through interoperable graph structures.</p>
+            </div>
+            <div class="focus-item">
+              <span>03</span>
+              <h3>Ontology and AI</h3>
+              <p>Grounding AI-assisted work in formal definitions and ontological principles.</p>
+            </div>
+            <div class="focus-item">
+              <span>04</span>
+              <h3>Project leadership</h3>
+              <p>Coordinating technical work from domain analysis through delivery.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -216,20 +278,39 @@
             <div class="research-meta">PHD · UNIVERSITY AT BUFFALO · 2026</div>
             <h3>Netting Expectations: The Football Ontology</h3>
             <p>My dissertation develops a formal ontology of association football grounded in BFO and CCO, with emphasis on soccer processes, information entities, expected goals, and semantic interoperability.</p>
+            <div class="link-cluster compact-links">
+              <a class="text-link" href="https://philpapers.org/rec/BENNET" target="_blank" rel="noopener">PhilPapers record <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://philarchive.org/rec/BENNET" target="_blank" rel="noopener">PhilArchive record <span aria-hidden="true">↗</span></a>
+            </div>
           </article>
 
           <article class="research-item reveal">
-            <div class="research-meta">FORTHCOMING · STIDS 2026</div>
+            <div class="research-meta">PRESENTED · STIDS 2026</div>
             <h3>My Ontologist</h3>
             <p>“My Ontologist: Evaluating BFO-Based AI for Definition Support” examines the use of an ontology-focused AI system for supporting formal definition work.</p>
-            <a class="text-link" href="https://arxiv.org/abs/2407.17657" target="_blank" rel="noopener">Read the preprint <span aria-hidden="true">↗</span></a>
+            <div class="link-cluster compact-links">
+              <a class="text-link" href="https://arxiv.org/abs/2407.17657" target="_blank" rel="noopener">Read the preprint <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://ncor-network.org/events/stids2026" target="_blank" rel="noopener">STIDS 2026 program <span aria-hidden="true">↗</span></a>
+            </div>
           </article>
 
           <article class="research-item reveal">
-            <div class="research-meta">PEER-REVIEWED PUBLICATIONS</div>
-            <h3>Ontology, knowledge representation, and AI</h3>
-            <p>My published research includes work on pathogen reference ontologies, realizable entities, mid-level ontology architecture, and large language models.</p>
-            <a class="text-link" href="https://orcid.org/0009-0006-5880-7503" data-config-href="orcid" target="_blank" rel="me noopener">View my ORCID record <span aria-hidden="true">↗</span></a>
+            <div class="research-meta">JOURNAL OF BIOMEDICAL SEMANTICS · 2025</div>
+            <h3>A fourfold pathogen reference ontology suite</h3>
+            <p>This peer-reviewed work develops a coordinated suite of pathogen reference ontologies designed to support consistent representation and biomedical data integration.</p>
+            <a class="text-link" href="https://doi.org/10.1186/s13326-025-00333-6" target="_blank" rel="noopener">Read the journal article <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="research-item reveal">
+            <div class="research-meta">SELECTED PAPERS · 2024</div>
+            <h3>Foundations, architecture, and knowledge representation</h3>
+            <p>Additional research addresses realizable entities in BFO, criteria for mid-level ontology architecture, and ontology-based representations for arguments and large language models.</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2405.00197" target="_blank" rel="noopener"><span>Grounding Realizable Entities</span><span aria-hidden="true">↗</span></a>
+              <a href="https://arxiv.org/abs/2404.17757" target="_blank" rel="noopener"><span>Middle Architecture Criteria</span><span aria-hidden="true">↗</span></a>
+              <a href="https://philpapers.org/rec/BEVOAA" target="_blank" rel="noopener"><span>Ontologies, Arguments, and Large Language Models</span><span aria-hidden="true">↗</span></a>
+            </div>
+            <a class="text-link orcid-link" href="https://orcid.org/0009-0006-5880-7503" data-config-href="orcid" target="_blank" rel="me noopener">View complete ORCID record <span aria-hidden="true">↗</span></a>
           </article>
         </div>
       </div>

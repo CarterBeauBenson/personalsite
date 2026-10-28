@@ -228,6 +228,18 @@
     gap: 18px;
   }
 
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-item {
+    min-height: auto;
+  }
+
+  .publication-links a {
+    align-items: flex-start;
+  }
+
 
   /* PROJECTS */
 

@@ -362,6 +362,53 @@ a.project:hover .project-arrow {
   margin-top: 22px;
 }
 
+.compact-links {
+  margin-top: 22px;
+}
+
+.compact-links .text-link {
+  margin-top: 0;
+}
+
+.publication-links {
+  display: grid;
+
+  margin-top: 28px;
+
+  border-top: 1px solid var(--line);
+}
+
+.publication-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid var(--line);
+
+  color: #dbe1e3;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition:
+    color 180ms ease,
+    padding 220ms var(--ease);
+}
+
+.publication-links a:hover {
+  padding-left: 10px;
+
+  color: var(--accent);
+}
+
+.orcid-link {
+  margin-top: 30px !important;
+}
+
 
 /* ABOUT */
 
@@ -405,6 +452,54 @@ a.project:hover .project-arrow {
   font-size: clamp(1.35rem, 2.25vw, 1.8rem);
   letter-spacing: -0.025em;
   line-height: 1.45;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-top: 52px;
+
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.focus-item {
+  min-height: 185px;
+
+  padding: 26px;
+
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.focus-item > span {
+  color: var(--accent);
+
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Consolas,
+    monospace;
+
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+}
+
+.focus-item h3 {
+  margin: 26px 0 0;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.focus-item p {
+  margin: 10px 0 0;
+
+  font-size: 0.88rem;
+  line-height: 1.55;
 }
 
 
